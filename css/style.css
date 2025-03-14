@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+}
+
+body {
+width: 100%;
+
+}
+.swiper-slide {
+    background: #f8f8f8;
+    
+}
+
+.swiper-slide__header{
+width: 100%;
+height: 56px;
+padding: 16px 32px;
+font-weight: 400;
+color:#7e7e82;
+background: #fff;
+}
+
+.main__content{
+    padding: 0 32px;
+    width: auto;
+}
+
+.swiper-slide__container{
+padding: 24px 0px;
+
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 16px;
+}
+
+.brand-swiper__slide{
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    width: 240px;
+    height: 72px;
+    background: #fff;
+    display: flex;
+    
+}
+
+.brand-swiper__slide--img{
+padding: 20px 16px;
+margin-right: 24px;
+position: absolute;
+
+}
+
+.brand-swiper__slide--svg{
+    padding: 16px;
+    position: relative;
+    left: 165px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.toggle-button{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding-bottom: 34px;
+}
+
+.toggle-button--img{
+padding-right:8px;
+width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1120px) {
+    
+
+    .brand-swiper__slide {
+        width: 224px;
+        
+    }
+    .brand-swiper__slide--svg{
+        left: 150px;
+    }
+}
+
+
+
+@media  (max-width: 768px) {
+    .swiper-slide__container{
+display: none;
+    }
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+    .swiper-slide__container{
+display: none;
+    }
+
+.toggle-button{
+    display: none;
+}
+
+    .swiper-container{
+        width: 240px;
+        height: 72px;
+       }
+
+.swiper-slide__header{
+height: 80px;
+}
+    
+.main__content{
+    height: 140px;
+}
+
+.swiper-slide{
+margin-right: 16px;
+}
+
+.swiper-slide img{
+    padding: 20px 16px;
+    margin-right: 24px;
+   }
+}
+
+
+@media (max-width: 768px) {
+    .swiper-container {
+        display: block;
+    }
+
+    .brand-swiper {
+        width: 100%;
+        max-width: 800px; /* Ограничь ширину, если нужно */
+        overflow: hidden;
+    }
+    
+    .brand-swiper__slide {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .brand-swiper__slide img {
+        max-width: 100%;
+        height: auto;
+    }
+    .main__content{
+        padding: 20px;
+    }
+    
+}
+
+
+@media (min-width: 769px) {
+    .swiper-container {
+        display: none;
+    }
+
+}
+
